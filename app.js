@@ -47,7 +47,7 @@ app.get('/category/:category', (req, res) => {
 
 const thumbsupply = require('thumbsupply');
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log('Listening on port 4000!')
 });
 
